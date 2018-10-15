@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Fahkwang');
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|Nanum+Brush+Script');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    position: relative;
+    width: 100vw;
+    height: 220vh;
+    background-image: url("imagenes/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+  }
+  .child{
+      height: 100%;
+      border: 2px  solid black;
+      box-shadow: 5px 5px 40px black;
+      padding: 25px;
+      overflow: scroll;
+    
+  }
+
+  .child .caratula {
+      border: 10px solid black;
+      border-radius: 50%;
+      position: relative;
+      background-color: black;
+  
+
+      box-shadow:          10px 10px 25px  gray,
+                           inset 0 0 20px  white;
+
+
+   
+  }
+  .child .caratula img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+  }
+
+  .main_info{
+      text-align: center;
+  }
+  .main_info ul {
+      display: inline-block;
+      text-decoration: none;
+      list-style: none  ;
+      
+  }
+  
+  button{
+      background-color: transparent;
+      border: 2px solid black;
+      height: 50px;
+  }
+
+   .estilo ,p ,h4{
+    font-family: 'Fahkwang', sans-serif;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .estilo li {
+      list-style: none;
+      text-decoration: none;
+  }
+  .estilo li i {
+      margin-right: 10px;
+      font-size: 1rem;
+  }
+  #seeModal {
+      position: relative;
+    
+      color: white;
+      width: 250px;
+      font-family: 'Fahkwang', sans-serif;
+      font-family: 'Nanum Brush Script', cursive;
+      font-size: 1.5rem;
+      transition: 1s;
+      background-color: #202020;
+      border :5px solid gray;
+      border-radius: 10px;
+    }
+
+    #seeModal:hover {
+        color:  black;
+        background-color: white;
+       font-weight: 800;
+      
+    }
+
+
+    
+  /* ventana modal*/
+  #modal {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: -1000vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+    z-index: 1000;
+  }
+
+  #cerrar{
+   position: absolute;
+   top:6%;
+   left: 90%;
+   font-size: 1.5rem;
+   cursor: pointer;
+   z-index: 10000;
+
+  } 
+    /*formulario*/
+  .form{
+    margin: 0;
+    color:#485e74;
+    line-height: 1.6;
+    font-family: 'segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top:1em;
+    padding-bottom: 1em;
+    color:#fff;
+    width: 100%; 
+    height: 100%;
+
+    background: url("imagenes/black.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: scroll;
+}
+
+.form .wrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.8);
+    margin-bottom: 50px;
+    
+}
+
+.form .wrapper > * {
+    padding: 1em;
+
+}
+
+.form .wrapper .company-info {
+
+    background-color: #202020;
+    opacity: 0.7;
+  
+}
+
+.form .wrapper .company-info ul ,.form .wrapper .company-info h3{
+    text-align: center;
+}
+
+.form .wrapper .contact {
+    background-color: 	#484848;
+    opacity: 0.5;
+    width:100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.form .wrapper .company-info ul{
+   list-style: none;
+   padding: 0;
+}
+.form .wrapper .company-info ul i {
+    padding: 0 10px;
+    font-size: 22px;
+}
+.form .brand {
+    text-align: center;
+}
+
+
+.form .wrapper .contact form{
+ display: flex ;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ width :100%;
+ text-align: center;
+ 
+}
+
+.form .wrapper .contact form p {
+    width: 30%;
+ 
+}
+
+
+.form .wrapper .contact form p  label{
+    text-align: left;
+    display: block;
+    width: 100%;
+
+}
+
+.form .wrapper .contact form p  input{
+    display: block;
+    width: 100%;   
+    height: 40px;
+
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    background-color: 	#484848;
+
+}
+.form .wrapper .contact form p  textarea{
+
+    width: 100%;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    background-color: 	#484848;
+    height: 75px;
+   
+}
+
+.form .wrapper .contact form p  button{
+    width: 100%;
+    border: 5px  #202020 solid;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    background-color: #202020;
+    outline: 0;
+    text-transform: uppercase;
+    margin-top: 50px;
+    cursor: pointer;
+    
+}
+
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display:  none;
+}
+
+/*social*/
+.social {
+    width: 100%;
+    background: url("/img/black.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 250px;
+   
+  
+}
+.social .titulo {
+ 
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: 'Fahkwang', sans-serif;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 2rem;
+    
+}
+
+.social ul {
+  
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.social ul li {
+   
+    list-style: none;
+    width: 15%;
+    text-align: center;
+}
+
+.social ul li a{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+ 
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    text-decoration: none;
+    box-shadow: 0 45px 45px rgba(0,0,0,0.5);
+    background: linear-gradient(0deg,#ddd,#fff);
+    transition: .5s;
+}
+
+.social ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+	
+.social ul li a .fab {
+
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg,#fff,#ddd);
+    border-radius: 50%;
+    line-height: 70px;
+    font-size: 24px;
+    color : #262626;
+    transition: 0.5;
+}
+.social ul li:nth-child(1) a:hover .fab
+{
+    
+      color: #3b5998;
+    
+}
+.social ul li:nth-child(2) a:hover .fab
+{
+    
+      color: #00aced;
+    
+}
+
+.social ul li:nth-child(3) a:hover .fab
+{
+    
+      color: #dd4b39;
+    
+}
+.social ul li:nth-child(4) a:hover .fab
+{
+    
+      color: #3b5998;
+    
+}.social ul li:nth-child(5) a:hover .fab
+{
+    
+      color: #bc2a8d;
+    
+}
+
+label{
+    color: black;
+    font-weight: 800;
+}
+
+input,textarea{
+    color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 420px){
+    .social ul li {
+        width: 100%;
+        margin-bottom: 15px;
+    }  
+    .social .titulo {
+        padding-top: 0;
+    }
+    .child{
+        height: 100%;
+    } 
+    .contenedor {height: 220vh;}
+
+}
+
+@media screen and (max-width: 620px){
+    .social ul li {
+        width: 40%;
+        margin-bottom: 10px;
+    }  
+    .social {height: 350px;}
+
+}
+
+
+
+@media screen and (max-width:720px){
+    .form .wrapper .contact form {
+        display: block;
+    }
+    .form .wrapper .contact form p {
+        width: 100%;
+     
+    }
+
+}
+
+
+
+
+
+
+
