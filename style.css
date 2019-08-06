@@ -12,7 +12,7 @@
 .contenedor{
     position: relative;
     width: 100vw;
-    height: 350vh;
+    height: 300vh;
     background-image: url("imagenes/banner.jpg");
     background-position: center;
     background-repeat: no-repeat;
