@@ -52,14 +52,12 @@
   }
 
   .main_info{
-      text-align: center;
-      color: CC0066;	  
+      text-align: center;	  
   }
   .main_info ul {
       display: inline-block;
       text-decoration: none;
       list-style: none;
-      color: CC0066;
       
   }
   
@@ -75,7 +73,6 @@
     font-size: 1.5rem;
     margin-bottom: 0;
     position: relative;
-    color: CC0066;
 }
 
   .estilo li {
